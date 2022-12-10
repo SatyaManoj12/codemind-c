@@ -3,7 +3,7 @@
 int main()
 {
 	int size,i;
-	float sum=0;
+	float sum=0,avg;
 	scanf("%d",&size);
 	int a[size];
 	for(i=0;i<size;i++)
@@ -14,6 +14,6 @@ int main()
 	{
 		sum=sum+a[i];
 	}
-    float avg=sum/size;
+	avg=sum/size;
 	printf("%.2f",avg);
 }
