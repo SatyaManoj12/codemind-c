@@ -1,25 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int i,n,r,rev=0,re=0;
     scanf("%d",&n);
     int sq=n*n;
-    int rev=0;
-    while(n>0)
+    while(n!=0)
     {
-        int r=n%10;
+        r=n%10;
         rev=rev*10+r;
         n=n/10;
     }
-    int x=rev*rev;
-    int y=0;
-    while(x>0)
+    int sqq=rev*rev;
+    int x=sqq;
+    while(x!=0)
     {
-        int r=x%10;
-        y=y*10+r;
+        r=x%10;
+        re=re*10+r;
         x=x/10;
     }
-    if(y==sq)
+    if(sq==re)
     {
         printf("True");
     }
